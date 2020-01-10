@@ -17,9 +17,10 @@
         height: 100%;
         flex-direction: row-reverse; /*수직하게 방향이 적용되면
         algn-items와 justify-content방향은 반대가 됨*/
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
       }
       .box {
+        display: flex;
         background-color: red;
         width: 200px;
         height: 200px;
@@ -27,13 +28,24 @@
         display: flex; /*박스안의 숫자를 움직이기위한 flex*/
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         color: white;
+      }
+      .children {
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
       }
     </style>
   </head>
   <body>
     <div class="father">
-      <div class="box">1</div>
+      <div class="box">
+        1
+        <div class="children"></div>
+        <div class="children"></div>
+      </div>
       <div class="box">2</div>
       <div class="box">3</div>
       <div class="box">4</div>
