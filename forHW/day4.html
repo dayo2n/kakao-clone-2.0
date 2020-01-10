@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .father {
+        width: 1300px;
+        height: 700px;
+        background-color: #258ffb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        width: 300px;
+        height: 300px;
+        background-color: #eb677f;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+      .child:nth-child(2):hover {
+        background-color: red;
+      }
+      .child {
+        width: 50px;
+        height: 50px;
+        background-color: #d8d8d8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="box">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+      </div>
+    </div>
+  </body>
+</html>
