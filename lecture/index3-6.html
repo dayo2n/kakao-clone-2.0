@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Position</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      /*
+      #boxOne {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: static;
+      }
+      #boxTwo {
+        height: 100px;
+        width: 300px;
+        background-color: green;
+        position: fixed;
+        top: 10px;
+        right: 0px;
+      }
+      Position fixed
+          <div id="boxOne">
+        <div class="box-child"></div>
+      </div>
+      <div id="boxTwo">
+        <div class="box-child"></div>
+      </div>  */
+      .abs-box {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+        /*relative 부모를 기준으로 자식인 박스가 위치를 잡음(absolute)
+        부모와 상응하는 position이 없으면 html의 기준에 따라 위치를 잡음*/
+      }
+      .abs-child {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="abs-box">
+      <div class="abs-child"></div>
+    </div>
+    <!-- Position fixed
+        <div id="boxOne">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+      <div class="box-child"></div>
+    </div> -->
+  </body>
+</html>
