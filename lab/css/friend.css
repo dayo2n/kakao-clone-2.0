@@ -6,11 +6,42 @@
 
 .friend .friend__avatar {
   width: 50px;
-  border-radius: 35%; /*이미지 크기가 바뀔거라서 픽셀로 못씀*/
+  border-radius: 38%; /*이미지 크기가 바뀔거라서 픽셀로 못씀*/
 }
 
 .friend__avatar.g-avatar {
   /*두 클래스이름을 띄우지않고 쓰면 and(&)의 의미,
     두 클래스의 이름을 띄우고 쓰면 (예를 들어 .a .b) a클래스 안에 있는 b클래스만을 가리킴*/
-  /*width: 70px;*/
+  width: 70px;
+}
+.friend__avatar.m-avatar {
+  width: 60px;
+}
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  margin-right: 15px;
+}
+
+.friend__content .friend__name {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp {
+  opacity: 0.6;
+}
+
+.friend__content .friend__bottom-text {
+  font-size: 14px;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp {
+  font-size: 12px;
 }
