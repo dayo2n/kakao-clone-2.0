@@ -70,3 +70,8 @@
   background-color: #f5f5f5;
   border-radius: 5px;
 }
+
+.friend .friend__email {
+  opacity: 0.7;
+  font-size: 12px;
+}
