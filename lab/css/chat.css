@@ -1,5 +1,12 @@
-.chats__body {
-  padding: 0;
+.header-wrapper {
+  /*헤더를 fixed 해주려고 만든 클래스*/
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white;
+  padding: 5px 0px;
+  box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
+    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
 .chats__body .header,
@@ -7,9 +14,12 @@
   padding: 0px 20px;
 }
 
-.chat-screen {
+.chats__body {
+  padding: 0;
+  padding-top: 100px;
+  min-height: 100000px;
   background-image: url("../chatBG.png");
-  min-height: 100vh; /*veiw point를 100%로*/
+  min-height: 200vh; /*veiw point를 200%로*/
 }
 
 .chat__write {
