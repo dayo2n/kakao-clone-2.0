@@ -5,8 +5,6 @@
   width: 100%;
   background-color: white;
   padding: 5px 0px;
-  box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
-    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
 }
 
 .chats__body .header,
@@ -18,7 +16,7 @@
   padding: 0;
   padding-top: 100px;
   min-height: 100000px;
-  background-image: url("../chatBG.png");
+  background-color: #b6cddd;
   min-height: 200vh; /*veiw point를 200%로*/
 }
 
@@ -44,6 +42,25 @@
   right: 10px;
 }
 
+@keyframes float {
+  /*float라는 이름의 애니메이션 정의*/
+  0% {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  50% {
+    box-shadow: 0 30px 60px -60px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+  100% {
+    box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+      0 18px 36px -18px rgba(0, 0, 0, 0.3),
+      0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  }
+}
+
 .chat__write {
   margin: 0 auto;
   bottom: 0px;
@@ -64,6 +81,7 @@
   border-radius: 10px;
   box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
     0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  animation: float 1.7s linear infinite forwards;
 }
 
 .chat__icon {
@@ -151,10 +169,39 @@
 
 .incoming-message .message__bubble {
   border-top-left-radius: 0;
-  background-image: linear-gradient(to right, #d3cce3, #e9e4f0);
+  background-image: linear-gradient(to right, #f8f5d5, rgb(245, 236, 158));
 }
 
 .sent-message .message__bubble {
   border-bottom-right-radius: 0;
-  background-image: linear-gradient(to right, #e9e4f0, #d3cce3);
+  background-image: linear-gradient(to right, #fdc830, #f8b500);
+}
+
+@keyframes incomingAni {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.incoming-message {
+  animation: incomingAni 0.5s linear forwards;
+}
+@keyframes sentAni {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.sent-message {
+  animation: sentAni 0.5s linear forwards;
+  /*forwards는 애니메이션이 끝나도 마지막 value를 유지한다는 뜻*/
 }
