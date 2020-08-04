@@ -16,16 +16,15 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span class="status-bar__clock">16:00</span>
+        <span class="status-bar__clock">16:53</span>
       </div>
       <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-      <i class="fas fa-volume-mute"></i>
-      <i class="fas fa-wifi"></i>
-      <span class="status-bar__barttery-level">75%</span>
-      <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__barttery-level"></span>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
     </div>
-  </div>
     <header class="header">
       <div class="header__header-column">
         <h1 class="header__title">Friends</h1>
@@ -33,64 +32,118 @@
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-plus"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-music"></i>
+        </span>
         <span class="header__icon">
           <i class="fas fa-cog"></i>
         </span>
       </div>
     </header>
     <main class="friends">
-        <header class="friends__header">
-            <div class="friends__friend friend">
-                <div class="friend__column">
-                    <img src="avatar.jpg" class="g-avartar friend__avatar" alt="no image"/>
+      <header class="friends__header">
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img
+              src="image/avatar2.png"
+              class="g-avartar friend__avatar"
+              alt="no image"
+            />
             <div class="friend__content">
-                <span class="friend__name">
-                    dayo2n
-                </span>
-                <span class="friend__status">
-                    hi hello how are you
-                </span>
-                </div>
-             </div>
+              <span class="friend__name">
+                문다연
+              </span>
             </div>
-        </header>
-        <div class="friends__plus">
-            <h5 class="friends__title">Plus friend</h5>
-            <div class="friends__friend friend">
-                <div class="friend__column">
-                <img src="avatar.jpg" class="friend__avatar" alt="no image"/>
-                 <div class="friend__content">
-                  <span class="friend__name">
-                    Plus Friend
-             </span>  
+          </div>
+          <div class="friend_column">
+            <div class="friend__now-listening">
+              <span>
+                Needy - Ariana grande
+              </span>
+              <i class="fas fa-play"></i>
             </div>
-             </div>
-            </div>
+          </div>
         </div>
-        <ul class="friends__list">
-            <h5 class="friends__title">Friends 14</h5>
-                <li class="friends__friend friend">
-                    <div class="friend__column">
-                    <img src="avatar.jpg" class="friend__avatar" alt="no image"/>
-                <div class="friend__content">
-                    <span class="friend__name">
-                        Shin zzang
-                    </span>
-                    <span class="friend__status">
-                        you make me feel special
-                    </span>
-                 </div>
-                </div>
-                <div class="friend_column">
-                    <div class="friend__now-listening">
-                        <span>
-                        Needy - Ariana grande
-                    </span>
-                    <i class="fas fa-play"></i>
-                    </div>
-                </div>
-            </li>
-        </ul>
+      </header>
+
+      <div class="friends__plus">
+        <h5 class="friends__title">Favorites</h5>
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img src="image/avatar.png" class="friend__avatar" alt="no image" />
+            <div class="friend__content">
+              <span class="friend__name">
+                박새로이
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="friends__list">
+        <h5 class="friends__title">Friends 492</h5>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img
+              src="image/avatar3.jpg"
+              class="friend__avatar"
+              alt="no image"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                문혜림
+              </span>
+            </div>
+          </div>
+          <div class="friend_column"></div>
+        </li>
+
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img
+              src="image/avatar5.jpeg"
+              class="friend__avatar"
+              alt="no image"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                송슬
+              </span>
+              <span class="friend__status">
+                머리기르기 대작전
+              </span>
+            </div>
+          </div>
+          <div class="friend_column">
+            <div class="friend__now-listening">
+              <span>
+                Used to - Avalon Young
+              </span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img
+              src="image/avatar4.png"
+              class="friend__avatar"
+              alt="no image"
+            />
+            <div class="friend__content">
+              <span class="friend__name">
+                카카오페이
+              </span>
+            </div>
+          </div>
+          <div class="friend_column"></div>
+        </li>
+      </ul>
     </main>
     <nav class="nav">
       <ul class="nav__list">
@@ -101,12 +154,13 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">4</div>
             <i class="far fa-comment"></i
           ></a>
         </li>
         <li class="nav__list-item">
           <a href="find.html" class="nav__list-link">
-            <i class="fas fa-search"></i
+            <i class="fas fa-hashtag"></i
           ></a>
         </li>
         <li class="nav__list-item">
