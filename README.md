@@ -14,11 +14,8 @@ html, css BEGINNER
 ## 📷 Design 
 
 ## 📸 ScreenShot
-<img src="image/ScreenShot/screenShot01.png" width="200px">
-<img src="image/ScreenShot/screenshot02.png" width="200px">
-<img src="image/ScreenShot/screenshot03.png" width="200px">
-<img src="image/ScreenShot/screenshot04.png" width="200px">
-<img src="image/ScreenShot/screenshot05.png" width="200px">
-<img src="image/ScreenShot/screenshot06.png" width="200px">
+<img src="image/ScreenShot/screenShot01.png" width="200px">  <img src="image/ScreenShot/screenShot02.png" width="200px">   <img src="image/ScreenShot/screenShot03.png" width="200px">
+
+<img src="image/ScreenShot/screenShot04.png" width="200px">   <img src="image/ScreenShot/screenShot05.png" width="200px">   <img src="image/ScreenShot/screenShot06.png" width="200px">
 
 ## 📌 Memo
