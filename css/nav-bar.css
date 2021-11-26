@@ -2,15 +2,16 @@
   position: fixed; /*fixed를 쓰려면 width를 꼭 지정해야*/
   width: 100%;
   padding: 20px 50px;
-  background-color: #fcfcfc;
+  background-color: #3b9769;
   left: 0px;
   bottom: 0px;
-  border-top: 1px solid #f7f7f7;
+  /* border-top: 1px solid #f7f7f7; */
 }
 
 .nav .nav__list {
   display: flex;
   justify-content: space-between;
+  color: rgb(226, 226, 226);
 }
 
 .nav i {

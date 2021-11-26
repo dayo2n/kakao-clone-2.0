@@ -1,4 +1,4 @@
-.bigScreen {
+.bigScreen, .smallScreen {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -17,8 +17,14 @@
   z-index: 4;
 }
 
-@media screen and (min-width: 10000px) {
+@media screen and (min-width: 600px) {
   .bigScreen {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .smallScreen {
     display: flex;
   }
 }
