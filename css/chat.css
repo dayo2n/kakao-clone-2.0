@@ -5,8 +5,8 @@
   /*layer의 순서에서 오류가 있어서 수정한 부분*/
   top: 0px;
   width: 100%;
-  background-color: #b6cddd;
   padding: 6px 0px;
+  background-color: #5523348c;
 }
 
 .chats__body .header,
@@ -15,15 +15,15 @@
 }
 
 .chats .chats__chat {
-  padding: 2px 0px;
+  padding: 7px 0px;
 }
 
 .chats__body {
   padding: 0;
   padding-top: 100px;
   min-height: 1000px;
-  background-color: #b6cddd;
-  min-height: 200vh; /*veiw point를 200%로*/
+  background-image: url("../image/chatBackground.png");
+  background-size: 100%;
 }
 
 .chat__write-container {
@@ -40,12 +40,14 @@
 }
 
 .chat__icon-left {
+  color: #8f153e;
   position: absolute;
   left: 10px;
   opacity: 0.7;
   margin-left: 5px;
 }
 .chat__icon-right {
+  color: #8f153e;
   position: absolute;
   right: 10px;
   opacity: 0.7;
@@ -55,6 +57,7 @@
   margin: 0px 5px;
 }
 
+/* 안쓰였음 */
 @keyframes float {
   /*float라는 이름의 애니메이션 정의*/
   0% {
@@ -76,25 +79,22 @@
 
 .chat__write {
   margin: 0 auto;
-  bottom: 0px;
+  bottom: 10px;
   width: 100%;
-  border-radius: 0px;
-  padding: 20px 60px;
-  width: 100%;
+  border-radius: 20px;
+  padding: 20px 50px;
   border: none;
   font-size: 14px;
-  transition: width 0.3s ease-in, border-radius 0.3s ease-in,
-    transform 0.3s ease-in;
+  transition: width 0.3s ease-in, border-radius 0.3s ease-in, transform 0.3s ease-in;
+  box-shadow: 0px 0px 20px rgba(161, 14, 70, 0.986);
 }
 
 .chat__write:focus {
   outline: none;
-  /*width: 80%;
+  width: 80%;
   transform: translateY(-100px);
-  border-radius: 10px;
-  box-shadow: 0 18px 36px -18px rgba(0, 0, 0, 0.3),
-    0 -12px 36px -8px rgba(0, 0, 0, 0.025);
-  animation: float 1.7s linear infinite forwards;*/
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(182, 84, 121, 0.87) inset;
 }
 
 .chat__icon {
@@ -122,7 +122,6 @@
 }
 
 .chat-screen .chat__messages {
-  border-top: 1px solid #f7f7f7;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -133,7 +132,7 @@
 
 .chat__messages .chat__timestamp {
   background-color: rgba(114, 114, 114, 0.753);
-  font-size: 12px;
+  font-size: 14px;
   color: #f7f7f7;
   padding: 5px 10px;
   border-radius: 10px;
@@ -167,10 +166,9 @@
 }
 
 .incoming-message img {
-  width: 30px;
+  width: 45px;
   border-radius: 10px;
   margin-right: 15px;
-  /*animation: spin 2s linear infinite;*/
 }
 
 .message .message__bubble {
@@ -180,23 +178,24 @@
     0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
   padding: 10px 20px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .incoming-message .message__author {
   margin-bottom: 5px;
   display: block;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .incoming-message .message__bubble {
   border-top-left-radius: 0;
   background-color: #f7f7f7;
+  color: #474747;
 }
 
 .sent-message .message__bubble {
   border-bottom-right-radius: 0;
-  background-color: #fdc830;
+  background-color: #474747;
 }
 
 @keyframes incomingAni {

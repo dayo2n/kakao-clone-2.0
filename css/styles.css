@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kings&display=swap');
+
 @import "reset.css";
 @import "status-bar.css";
 @import "header.css";
@@ -16,17 +23,20 @@
   /*원래는 설정한 크기의 기본 박스에 padding을 주면 초기 설정 사이즈 + padding값만큼 박스가 커지는데,
   boder-box를 사용하면 박스의 사이즈가 바뀌지않음
   nav-bar.css에서 width : 100%와 padding 50px를 그냥 쓰면 두 값이 더해지기때문에 아이콘이 짤리게 된 것*/
+  cursor: default;
 }
 
 body {
-  background-image: url('../image/ponyo.jpg');
+  background-image: url('../image/backgroundPonyo.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #3b9769;
   padding: 10px 20px;
-  color: rgb(224, 224, 224);
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(235, 235, 235);
+  /* font-family: 'Patrick Hand', cursive; */
+  font-family: 'Architects Daughter', cursive;
+
+  /* font-family: 'Kings', cursive; */
 }
 
 a {
@@ -46,4 +56,15 @@ a {
 }
 main {
   animation: fadeIn 0.5s ease-in-out;
+}
+
+i:hover{
+  cursor: pointer;
+  animation: rotate_icon 1s linear infinite;
+}
+
+@keyframes rotate_icon{
+	100% {
+    	transform: rotateY(360deg);
+    }
 }

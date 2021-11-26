@@ -16,6 +16,12 @@
 }
 
 .friends .friends__friend {
-  margin: 15px 0px;
-  padding: 2px 0px;
+  margin: 10px 0px;
+  padding: 10px 8px 10px 20px;
+  background-color: rgba(138, 138, 138, 0.514);
+  border-radius: 30px;
+}
+
+.friends .friends__friend:hover{
+  transform: translateY(-5px);
 }
