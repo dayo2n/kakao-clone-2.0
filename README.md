@@ -19,3 +19,4 @@ html, css BEGINNER
 <img src="image/ScreenShot/screenShot04.png" width="200px">   <img src="image/ScreenShot/screenShot05.png" width="200px">   <img src="image/ScreenShot/screenShot06.png" width="200px">
 
 ## 📌 Memo
+- nav bar에서 첫번째 아이콘에 커서를 올리면 나머지 아이콘이 사라지는 버그
