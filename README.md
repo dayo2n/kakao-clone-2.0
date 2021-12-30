@@ -1,7 +1,6 @@
 # Kakao-Clone-2.0
 From Nomad Academy
  
-html, css BEGINNER
 
 ## 📚 Summary
 > 카카오톡을 클로닝하며 html, css 학습
